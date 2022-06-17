@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --border-color: #1e4e64be;
+  /* --border-color: #1a97c9; */
+  --fill-color: cadetblue;
+
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: #1e4e64;
+  color: #eee;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 5px 0 0;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.cup {
+  background-color: #fff;
+  border: 0px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+.cup.cup-small {
+  width: 50px;
+  height: 95px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+
+}
+
+.cup.cup-small.full {
+  background: var(--fill-color);
+  color: #fff;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+  /* letter-spacing: -1px; */
+  /* line-height: 2; */
+}
